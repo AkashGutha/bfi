@@ -7,5 +7,6 @@
     "undef": true,
     "eqnull": true,
     "eqeqeq": true,
-    "node": true
+    "node": true,
+    "asi": true
 }

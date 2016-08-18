@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "allowJs": true,
+        "pretty": true,
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "built/bfi.js",
+        "sourceMap": true
+    },
+    "filesGlob": ["src/**/*.ts"],
+    "compileOnSave": true
+}
