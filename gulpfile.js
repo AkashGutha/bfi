@@ -5,6 +5,7 @@ var gulp = require('gulp')
 var uglify = require('gulp-uglify')
 var plumber = require('gulp-plumber')
 var ts = require('gulp-typescript')
+var typescript = require('typescript')
 var bump = require('gulp-bump')
 var del = require('del')
 
@@ -19,13 +20,25 @@ gulp.task('hello', function () {
 
 // build task
 
-gulp.task('buildjs', function () {
-  var tsResult = tsproject.src() // instead of gulp.src(...) 
+gulp.task('build', function () {
+  return tsproject.src() // instead of gulp.src(...) 
     .pipe(ts(tsproject))
+    .js
+    .pipe(gulp.dest('build'))
+})
 
-  return tsResult.js.pipe(gulp.dest('build'))
+// watch task
+
+gulp.task('watch', function () {
+  gulp.watch('src/**/*.ts' , ['hello', 'buildjs'])
+})
+
+// gulp delete task
+
+gulp.task('clean' , function () {
+  del('build/*')
 })
 
 // default gulp task.
 
-gulp.task('default', ['buildjs'])
+gulp.task('default', ['build'])

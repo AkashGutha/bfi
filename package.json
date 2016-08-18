@@ -1,29 +1,26 @@
 {
-    "name": "brain_fuck_interpreter",
-    "version": "1.0.0",
-    "description": "a brainfuck interpreter written in typescript",
-    "main": "src/main.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "Brainfuck",
-        "Typescript"
-    ],
-    "author": "Akash",
-    "license": "MIT",
-    "devDependencies": {
-        "del": "^2.2.2",
-        "gulp": "^3.9.1",
-        "gulp-bump": "^2.4.0",
-        "gulp-plumber": "^1.1.0",
-        "gulp-rename": "^1.2.2",
-        "gulp-require": "^0.1.4",
-        "gulp-typescript": "^2.13.6",
-        "gulp-uglify": "^2.0.0"
-    },
-    "dependencies": {
-        "typescript": "^3.10.5",
-        "gulp-typescript": "^2.13.6"
-    }
+  "name": "brain_fuck_interpreter",
+  "version": "1.0.0",
+  "description": "a brainfuck interpreter written in typescript",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Brainfuck",
+    "Typescript"
+  ],
+  "author": "Akash",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-require": "^0.1.4",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^2.0.0",
+    "typescript": "^1.8.10"
+  }
 }

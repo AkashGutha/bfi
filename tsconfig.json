@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "target": "es6",
         "allowJs": true,
         "pretty": true,
         "declaration": false,
@@ -10,6 +11,8 @@
         "outFile": "built/bfi.js",
         "sourceMap": true
     },
-    "filesGlob": ["src/**/*.ts"],
+    "filesGlob": [
+        "src/**/*.ts"
+    ],
     "compileOnSave": true
 }
