@@ -4,14 +4,18 @@
         "target": "es6",
         "allowJs": true,
         "pretty": true,
-        "declaration": true,
+        "declaration": false,
+       // "declarationDir": "build/declarations",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "noExternalResolve": true,
         "sourceMap": true,
         "sortOutput": true,
-        "out": "bfi.js"
+        "outFile": "build/js/main.js",
+        "outDir": "build/js",
+        "newLine": "LF",
+        "noImplicitUseStrict": false
     },
     "filesGlob": [
         "src/**/*.ts",

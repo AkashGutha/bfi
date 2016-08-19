@@ -10,7 +10,7 @@
     "break_chained_methods": true,
     "brace_style": "collapse-preserve-inline",
     "beautify.CSSfiles": ["css", "scss"],
-    "beautify.JSfiles": ["js", "json", "jsbeautifyrc", "jshintrc", "ts"],
+    "beautify.JSfiles": ["js", "json", "jsbeautifyrc", "jshintrc", "*.ts"],
     "beautify.HTMLfiles": ["htm", "html"],
     "css": {
         "indent_size": 4

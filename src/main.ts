@@ -1,10 +1,7 @@
-import primitives = require("./tokens/datatypes");
-
-let input = "akash";
-let output = "akshay";
+"use strict";
 
 function hello() {
-    console.log("hi from typescript!" + input + output + primitives.INT);
+    console.log("hi from typescript!");
 }
 
 hello();
