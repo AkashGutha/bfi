@@ -31,12 +31,10 @@ gulp.task('scripts', function(cb)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(ts(tsproject))
-        .js.pipe(gulp.dest('build/js'))
-
-    //   return merge([
-    //     tsResult.dts.pipe(gulp.dest('build/definitions')),
-    //     tsResult.js.pipe(gulp.dest('build/js'))
-    //   ])
+    return merge([
+        tsResult.dts.pipe(gulp.dest('build/definitions')),
+        tsResult.js.pipe(gulp.dest('build/js'))
+    ])
 })
 
 // concat and uglify
@@ -45,8 +43,7 @@ gulp.task('concat', ['scripts'], function(cb)
 {
     gulp.src(['build/**/*.js', '!build/libraries/*'])
         .pipe(plumber())
-        .pipe(
-            concat('bfi.js')) //,{banner:"bfi-<%package.version%>;\n"
+        .pipe(concat('bfi.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/libraries'))
 })
