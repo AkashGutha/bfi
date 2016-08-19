@@ -1,13 +1,7 @@
 "use strict";
 
 function hello() {
-    console.log("hi from typescript!");
+    console.log("hi Welcome to BFI!");
 }
 
-hello();
-hello();
-hello();
-hello();
-hello();
-hello();
 hello();
