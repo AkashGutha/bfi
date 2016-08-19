@@ -1,17 +1,19 @@
 {
-    "brace_style": "expand",
     "indent_char": " ",
     "indent_size": 4,
+    "comma_first": false,
+    "end_with_newline": true,
+    "max_preserve_newlines": 2,
     "space_before_conditional": false,
     "space_in_empty_paren": false,
     "space_in_paren": false,
     "break_chained_methods": true,
+    "brace_style": "collapse-preserve-inline",
     "beautify.CSSfiles": ["css", "scss"],
     "beautify.JSfiles": ["js", "json", "jsbeautifyrc", "jshintrc", "ts"],
     "beautify.HTMLfiles": ["htm", "html"],
-    "css":
-    {
-        "indent_size": 2
+    "css": {
+        "indent_size": 4
     },
     "beautify.onSave": true
 }

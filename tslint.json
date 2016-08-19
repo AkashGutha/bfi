@@ -19,7 +19,8 @@
             "allow-declarations"
         ],
         "no-var-keyword": true,
-        "no-internal-module": true
+        "no-internal-module": true,
+        "curly": true
     },
     "rulesDirectory": [
         /*
