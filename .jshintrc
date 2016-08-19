@@ -1,0 +1,11 @@
+{
+    "bitwise": true,
+    "eqeqeq": true,
+    "eqnull": false,
+    "curly": true,
+    "asi": false,
+    "evil": false,
+    "undef": true,
+    "node": true,
+    "esversion": 6
+}

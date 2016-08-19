@@ -25,10 +25,12 @@
         "curly": true,
         "no-empty": true,
         "align": [
+            true,
             "arguments",
             "parameters",
             "statements"
-        ]
+        ],
+        "semicolon": [true, "always"]
     },
     "rulesDirectory": [
         /*
