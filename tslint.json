@@ -11,8 +11,15 @@
      * Any rules specified here will override those from the base config we are extending
      */
         "no-constructor-vars": true,
-        "no-console": [false],
-        "no-var-keyword": true
+        "no-console": [
+            false
+        ],
+        "no-namespace": [
+            true,
+            "allow-declarations"
+        ],
+        "no-var-keyword": true,
+        "no-internal-module": true
     },
     "rulesDirectory": [
         /*

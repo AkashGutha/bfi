@@ -1,0 +1,17 @@
+{
+    "brace_style": "expand",
+    "indent_char": " ",
+    "indent_size": 4,
+    "space_before_conditional": false,
+    "space_in_empty_paren": false,
+    "space_in_paren": false,
+    "break_chained_methods": true,
+    "beautify.CSSfiles": ["css", "scss"],
+    "beautify.JSfiles": ["js", "json", "jsbeautifyrc", "jshintrc"],
+    "beautify.HTMLfiles": ["htm", "html"],
+    "css":
+    {
+        "indent_size": 2
+    },
+    "beautify.onSave": true
+}
