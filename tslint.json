@@ -30,7 +30,14 @@
             "parameters",
             "statements"
         ],
-        "semicolon": [true, "always"]
+        "semicolon": [true, "always"],
+        "no-console": [
+            true,
+            "debug",
+            "error",
+            "trace",
+            "warn"
+        ]
     },
     "rulesDirectory": [
         /*
