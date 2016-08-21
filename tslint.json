@@ -37,7 +37,10 @@
             "error",
             "trace",
             "warn"
-        ]
+        ],
+        "no-eval": true,
+        "label-position": true,
+        "no-unreachable": true
     },
     "rulesDirectory": [
         /*

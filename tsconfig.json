@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "es5",
         "allowJs": true,
         "pretty": true,
         "declaration": true,
-        "declarationDir": "build/declarations",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
@@ -14,7 +13,8 @@
         "sortOutput": true,
         "outDir": "build/js",
         "newLine": "LF",
-        "noImplicitUseStrict": false
+        "noImplicitUseStrict": true,
+        "noEmitHelpers": true
     },
     "filesGlob": [
         "src/**/*.ts",
