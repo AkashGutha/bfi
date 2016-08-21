@@ -3,20 +3,27 @@
  */
 
 import { InterpreterState } from "./states";
-import { Stack } from "./stack";
+import { Stack } from "./dataStructures/stack";
 
 export class Interpreter {
 
-    private options: string = "";
+    private input: string;
     private CurrentInterpreterState: InterpreterState;
     private FallbackStack: Stack < number > ;
-    private FallbackThrough: Stack < number > ;
+    private RunThroughStack: Stack < number > ;
 
-    constructor(options: string) {
-        this.options = options;
+    constructor(input: string) {
+        this.input = input;
         this.CurrentInterpreterState = InterpreterState.normal;
         this.FallbackStack = new Stack < number > ();
-        this.FallbackThrough = new Stack < number > ();
+        this.RunThroughStack = new Stack < number > ();
+    }
+    public run() {
+        this.interpret();
+    }
+
+    private interpret() {
+        console.log("Starting Interpreter ...........................");
     }
 
 }

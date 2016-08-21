@@ -6,4 +6,10 @@ function hello() {
     console.log("hi Welcome to BFI!");
 }
 
-hello();
+{
+    hello();
+    const comString: string = ".................................................................................+";
+    let interpeter: Interpreter = new Interpreter(comString);
+
+    console.log(interpeter.run());
+}
