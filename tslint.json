@@ -11,13 +11,23 @@
          * Any rules specified here will override those from the base config we are extending
          */
         "no-constructor-vars": true,
+        "no-trailing-whitespace": false,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-module",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-typecast"
+        ],
         "class-name": true,
         "comment-format": [
             "check-uppercase"
         ],
         "no-namespace": [
-            true,
-            "allow-declarations"
+            false
         ],
         "no-var-keyword": true,
         "no-internal-module": true,
@@ -30,7 +40,7 @@
             "parameters",
             "statements"
         ],
-        "semicolon": [true, "always"],
+        "semicolon": [ true, "always" ],
         "no-console": [
             true,
             "debug",
@@ -41,6 +51,7 @@
         "no-eval": true,
         "label-position": true,
         "no-unreachable": true
+
     },
     "rulesDirectory": [
         /*

@@ -1,15 +1,4 @@
-"use strict";
+import { Interpreter } from "./Interpreter";
 
-import { Interpreter } from "./interpreter";
-
-function hello() {
-    console.log("hi Welcome to BFI!");
-}
-
-{
-    hello();
-    const comString: string = ".................................................................................+";
-    let interpeter: Interpreter = new Interpreter(comString);
-
-    console.log(interpeter.run());
-}
+let BFI = new Interpreter(null);
+BFI.run();

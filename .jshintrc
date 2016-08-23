@@ -7,5 +7,6 @@
     "evil": false,
     "undef": true,
     "node": true,
+    "mocha": true,
     "esversion": 6
 }

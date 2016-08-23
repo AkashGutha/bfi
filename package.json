@@ -2,7 +2,7 @@
   "name": "brainfuck_interpreter",
   "version": "1.0.0",
   "description": "a brainfuck interpreter written in typescript",
-  "main": "src/main.js",
+  "main": "src/main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
     "gulp-bump": "^2.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.8.8",
+    "gulp-mocha": "^3.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-require": "^0.1.4",
@@ -29,6 +30,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "merge2": "^1.0.2",
+    "mocha": "^3.0.2",
     "tsify": "^1.0.3",
     "typescript": "^1.8.10",
     "vinyl-source-stream": "^1.1.0"
