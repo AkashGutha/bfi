@@ -26,8 +26,8 @@ export class Interpreter {
     }
 
     public make() {
-        return new Interpreter(null);
-    }    
+        return new Interpreter( null );
+    }
 
     public run() {
         return this.interpret( null );
@@ -38,8 +38,8 @@ export class Interpreter {
     }
 
     private interpret( input: string ) {
-        if (input !== null) { this.input = input; }
-        if (this.input === null) { console.log("errored!"); return; }
+        if ( input !== null ) { this.input = input; }
+        if (this.input === null) { /*console.log("errored!"); */return; }
         // console.log( "Starting Interpreter ..........................." );
         let out: string = "";
         let length = this.input.length;

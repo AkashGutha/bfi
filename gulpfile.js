@@ -42,15 +42,15 @@ var outMinFile = projectname + '-' + projectver + '.min.js';
 
 gulp.task( 'scripts', function () {
     var tsResult = gulp.src( 'src/**/*.ts' )
-        //.pipe(plumber())
-        //.pipe(sourcemaps.init())
+        .pipe( plumber() )
+        .pipe( sourcemaps.init() )
         .pipe( ts( tsproject ) );
-    // return merge([
-    //   tsResult.dts.pipe(gulp.dest('./build/definitions')),
-    return tsResult.js
-        //  .pipe(sourcemaps.write('.'))
-        .pipe( gulp.dest( './build/js' ) );
-    // ]);
+    return merge( [
+        tsResult.dts.pipe( gulp.dest( './build/definitions' ) ),
+        tsResult.js
+        .pipe( sourcemaps.write( '.' ) )
+        .pipe( gulp.dest( './build/js' ) )
+    ] );
 } );
 
 gulp.task( 'scripts-onlycompile', function () {
@@ -68,9 +68,8 @@ gulp.task( 'ts-compile', function () {
 
 gulp.task( 'browserify-sync', [ 'scripts' ], function () {
     browserify( {
-            entries: './src/main.ts',
-            standalone: "BFILib",
-            insertGlobals: true
+            entries: 'src/Interpreter.ts',
+            standalone: "BFILib"
 
         } )
         .plugin( tsify, {
@@ -81,7 +80,7 @@ gulp.task( 'browserify-sync', [ 'scripts' ], function () {
         .pipe( plumber() )
         .pipe( source( 'outFile.js' ) )
         .pipe( header( banner, { pkg: pkg } ) )
-        //.pipe( rename( outFile ) )
+        .pipe( rename( outFile ) )
         .pipe( gulp.dest( 'lib/' ) );
 } );
 

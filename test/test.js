@@ -1,7 +1,7 @@
 "use strict";
 
 var assert = require( 'assert' );
-var response = require( '../stacklib' );
+var response = require( '../lib/outFile' );
 
 console.log( response );
 // var BFI;

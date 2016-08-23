@@ -17,5 +17,6 @@
     "css": {
         "indent_size": 4
     },
+    "files":["!lib/*"],
     "beautify.onSave": true
 }
