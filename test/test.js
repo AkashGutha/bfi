@@ -1,22 +1,27 @@
 "use strict";
 
+var expect = require( 'chai' )
+    .expect;
 var assert = require( 'assert' );
-var response = require( '../lib/outFile' );
+var Interpreter = require( '../lib/brainfuck_interpreter-1.0.0' )
+    .Interpreter;
 
-console.log( response );
-// var BFI;
+var BFI;
 
 // before( 'setup the response', function ( done ) {
-//     BFI = new response(null);
+//     BFI = new Interpreter( "" );
 // } );
 
-// describe( 'if given +{5}. print 0x05', function () {
-//     var input = "+++++.";
-//     var byte = 0x05;
+describe( 'if given +{5}. print 0x05', function () {
+    let input = "+++++.";
+    let byte = 0x05;
 
-//     it( 'should print something ', function ( done ) {
-//         assert.equal(BFI.runfor(input), byte);
-//         done();
-//     } );
+    BFI = new Interpreter( "" );
 
-// } );
+    it( 'should print 5 ', function () {
+        // expect( true )
+        //     .to.be.true;
+        assert.deepEqual( BFI.runfor( input ), byte );
+    } );
+
+} );
