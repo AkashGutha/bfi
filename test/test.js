@@ -11,7 +11,6 @@ var BFI;
 // before( 'setup the response', function ( done ) {
 //     BFI = new Interpreter( "" );
 // } );
-
 describe( 'if given +{5}. print 0x05', function () {
     let input = "+++++.";
     let byte = 0x05;
