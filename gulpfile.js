@@ -126,6 +126,9 @@ gulp.task( 'watch-light', function () {
     gulp.watch( 'src/**/*.ts', [ 'browserify' ] );
 } );
 
+gulp.task( 'watch', function () {
+    gulp.watch( 'src/**/*.ts', [ 'default' ] );
+} );
 // gulp delete task
 
 gulp.task( 'clean-sync', [ 'minify-sync' ], function () {

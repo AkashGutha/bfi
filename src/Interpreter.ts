@@ -38,21 +38,28 @@ export class Interpreter {
     }
 
     private interpret( input: string ) {
+
+        // checking and setting input properly
         if ( input !== null ) { this.input = input; }
-        if (this.input === null) { /*console.log("errored!"); */return; }
-        // console.log( "Starting Interpreter ..........................." );
+        if ( this.input === null ) {
+            console.log( "errored!" );
+            return;
+        }
+
+        // the main loop
         let out: string = "";
         let length = this.input.length;
-        console.log( "input is " + input + " legth is " + length );
+        //console.log( "input is " + input + " legth is " + length );
 
         for ( let i = 0; i < length; i++ ) {
             let charachter = this.input.charAt( i );
 
             switch ( charachter ) {
                 case ".":
-                    let temp = String.fromCharCode( this.strip[ this.currentPosition ] );
-                    console.log( temp );
-                    out += temp;
+                    let byte = this.strip[ this.currentPosition ];
+                    let temp = String.fromCharCode( byte);
+                    console.log(temp);
+                    out += byte;
                     break;
                 case ">":
                     this.currentPosition++;
@@ -76,6 +83,7 @@ export class Interpreter {
             }
 
         }
+
         return out;
     }
 }
